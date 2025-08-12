@@ -12,18 +12,25 @@
     href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
     title="docsify-darklight-theme"
     type="text/css"
-/>
+  />
+  <style>
+    /* 优化切换主题按钮的位置*/
+    #docsify-darklight-theme {
+      right: -20px;
+      top: 25px;
+    }
+  </style>
 </head>
 <body>
   <div id="app">加载中...</div>
   <script>
     window.$docsify = {
       name: '', // 文档标题，会显示在侧边栏顶部
-      repo: '', // 右上角Github图标链接
+      repo: 'https://github.com/kongshan-zhuyu/docsify-blog', // 右上角Github图标链接
       loadNavbar: true, // 默认加载 _navbar.md，作为顶部导航栏
-      // loadSidebar: true, // 默认加载 _sidebar.md，作为侧边栏
-      // onlyCover: false,
-      // coverpage: true 是否开启封面，内容在 _coverpage.md 中
+      loadSidebar: true, // 默认加载 _sidebar.md，作为侧边栏
+      subMaxLevel: 1, // 允许显示二级标题
+      auto2top: true, // 切换页面时，自动滚动到顶部
     }
   </script>
   <!-- Docsify v4 -->
@@ -37,7 +44,9 @@
     <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <!-- 切换主题 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript">
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 </script>
 </body>
 </html>
