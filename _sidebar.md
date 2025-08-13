@@ -2,5 +2,6 @@
   - 构建工具
     - Vite
       - [自定义插件](frontEnd/buildTools/_vite.md)
+  - [实用的库](frontEnd/_libs.md)
 - 实用工具
   - [浏览器](practicalTools/_browser.md)
